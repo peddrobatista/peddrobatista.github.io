@@ -49,30 +49,34 @@ header ul li a.active, header ul li a:hover {
 }
 @media (max-width: 992px) {
     /* Configurações do menu */
+    header {
+        padding: 0 30px;
+    }
     header ul {
         position: absolute;
-        top: -100%;
+        top: 80px;
         left: 0;
-        width: 100%;
+        width: 50%;
         height: calc(100vh - 80px);
-        padding: 5px 100px;
+        padding: 5px 50px;
         text-align: center;
         overflow: auto;
         transition: 0.5s;
-        background: #111;
+        background: #000;
         flex-direction: column;
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateX(-100%);
     }
     header.active ul {
         opacity: 1;
         top: 80px;
-        transform: translateY(0);
+        transform: translateX(0);
     }
     header ul li a {
         margin: 5px 0;
         font-size: 24px;
     }
+    /* Cofigurações do toggle */
     .toggle {
         display: block;
         position: relative;
