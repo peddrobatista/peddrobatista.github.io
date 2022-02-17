@@ -86,7 +86,7 @@ section p {
         width: 50%;
         height: calc(100vh - 80px);
         padding: 5px 10px;
-        text-align: center;
+        text-align: left;
         overflow: auto;
         transition: 0.5s;
         background: #000;
@@ -101,6 +101,7 @@ section p {
     }
     header ul li a {
         margin: 5px 0;
+        width: 100%;
         font-size: 22px;
     }
     /* Cofigurações do toggle */
