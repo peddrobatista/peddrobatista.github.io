@@ -85,7 +85,7 @@ section p {
         left: 0;
         width: 50%;
         height: calc(100vh - 80px);
-        padding: 5px 50px;
+        padding: 5px 10px;
         text-align: center;
         overflow: auto;
         transition: 0.5s;
