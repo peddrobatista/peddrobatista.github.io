@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; /* Para rolar a pagina devagar */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* Configuraçóes do menu */
 header {
@@ -15,14 +15,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #111;
+    background: #000;
     z-index: 1000;
 }
 header .logo {
     color: #fff;
     font-size: 30px;
     text-decoration: none;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
 }
 header ul {
@@ -40,14 +40,41 @@ header ul li a {
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.5s;
 }
-header ul li a.active, header ul li a:hover {
-    background: #205aff;
+header ul li a:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
 }
 .toggle {
     display: none;
 }
+/* Configurações da seção */
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    min-height: 100vh;
+    padding: 150px 0 100px;
+}
+section div {
+    padding: 10px 15px 10px;
+}
+section h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+section p {
+    font-size: 18px;
+}
 @media (max-width: 992px) {
+    /* Cofigurações da seção */
+    section h2 {
+        font-size: 2.2em;
+        text-transform: uppercase;
+    }
     /* Configurações do menu */
     header {
         padding: 0 30px;
@@ -62,7 +89,7 @@ header ul li a.active, header ul li a:hover {
         text-align: center;
         overflow: auto;
         transition: 0.5s;
-        background: #111;
+        background: #000;
         flex-direction: column;
         opacity: 0;
         transform: translateX(-100%);
