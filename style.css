@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #000;
+    background: rgb(24, 24, 24);
     z-index: 1000;
 }
 header .logo {
@@ -32,6 +32,7 @@ header ul {
 header ul li {
     position: relative;
     list-style: none;
+    margin: 0 7px;
 }
 header ul li a {
     position: relative;
@@ -43,7 +44,9 @@ header ul li a {
     transition: 0.5s;
 }
 header ul li a:hover {
-    background: rgba(255,255,255,0.2);
+    background: #fff;
+    color: #000;
+    font-weight: 700;
     border-radius: 5px;
 }
 .toggle {
@@ -57,17 +60,70 @@ section {
     align-items: flex-start;
     text-align: center;
     min-height: 100vh;
-    padding: 150px 0 100px;
+    padding: 150px 0 50px;
 }
 section div {
     padding: 10px 15px 10px;
 }
 section h2 {
     font-size: 2.5em;
+    color: rgb(24, 24, 24);
     text-transform: uppercase;
 }
 section p {
+    color: rgb(24, 24, 24);
     font-size: 18px;
+}
+/* configurações do conteiner e cards */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container .card {
+    width: 320px;
+    margin: 20px;
+    padding: 30px 20px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px rgb(58, 58, 58);
+}
+.container .card .icon {
+    position: relative;
+    text-align: center;
+}
+.container .card .icon ion-icon {
+    max-width: 120px;
+    color: rgb(24, 24, 24);
+    font-size: 3.5em;
+}
+.container .card .contentBx {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+}
+.container .card .contentBx h3 {
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+.container .card .contentBx p {
+    font-size: 1em;
+    color: rgb(24, 24, 24);
+}
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
 }
 @media (max-width: 992px) {
     /* Cofigurações da seção */
@@ -89,7 +145,7 @@ section p {
         text-align: left;
         overflow: auto;
         transition: 0.5s;
-        background: #000;
+        background: rgb(24, 24, 24);
         flex-direction: column;
         opacity: 0;
         transform: translateX(-100%);
