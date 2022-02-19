@@ -81,6 +81,18 @@ section h2 {
     color: rgb(24, 24, 24);
     text-transform: uppercase;
 }
+section h3 {
+    font-size: 1.6em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    margin: 20px;
+}
+section h4 {
+    font-size: 1.2em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    margin: 10px;
+}
 section p {
     color: rgb(24, 24, 24);
     font-size: 18px;
@@ -89,43 +101,34 @@ section p {
 .container {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
-.container .card {
+.container .projeto {
     width: 320px;
-    margin: 20px;
+    margin: 10px;
     padding: 30px 20px;
-    border-radius: 40px;
+    border-radius: 15px;
     box-shadow: 1px 1px 3px rgb(58, 58, 58);
 }
-.container .card .icon {
+.container .projeto .contentBx {
     position: relative;
+    margin: 10px;
     text-align: center;
 }
-.container .card .icon ion-icon {
-    max-width: 120px;
+.container .projeto .contentBx h3 {
+    font-size: 1.2em;
     color: rgb(24, 24, 24);
-    font-size: 3.5em;
+    text-transform: none;
+    margin: 5px;
 }
-.container .card .contentBx {
-    position: relative;
-    margin: 20px;
-    text-align: center;
-}
-.container .card .contentBx h3 {
-    font-weight: 700;
-    color: rgb(24, 24, 24);
-    font-size: 1.4em;
-    letter-spacing: 1px;
-}
-.container .card .contentBx p {
-    font-size: 1em;
+.container .projeto .contentBx p {
+    font-size: 0.9em;
     color: rgb(24, 24, 24);
 }
-.container .card .contentBx a {
+.container .projeto .contentBx a {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
@@ -137,7 +140,7 @@ section p {
     text-decoration: none;
     transition: 0.2s;
 }
-.container .card .contentBx a:hover {
+.container .projeto .contentBx a:hover {
     background: rgb(24, 24, 24);
     color: #fff;
 }
