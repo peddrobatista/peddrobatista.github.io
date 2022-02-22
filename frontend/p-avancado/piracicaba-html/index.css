@@ -184,4 +184,7 @@ img:hover {
 	#menu ul {
 		margin-right: 0;
 	}
+	#menu ul li a {
+		font-size: 15px;
+	}
 }
