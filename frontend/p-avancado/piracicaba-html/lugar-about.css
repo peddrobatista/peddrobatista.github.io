@@ -24,6 +24,10 @@ html {
 /* Configurações do menu */
 #menu {
 	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	align-items: center;
 	top: 0;
 	list-style: none;
 	background: rgba(139, 139, 139, 0.089);
@@ -33,7 +37,6 @@ html {
 	z-index: 10;
 }
 #menu ul {
-	float: right;
 	margin-right: 20px;
 }
 #menu ul li {
@@ -114,4 +117,18 @@ html {
 .rodape a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.774);
+}
+@media (max-width: 562px) {
+	/* Configurações do menu */
+	#menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#menu ul {
+		margin-right: 0;
+	}
+	#menu ul li a {
+		font-size: 15px;
+	}
 }
