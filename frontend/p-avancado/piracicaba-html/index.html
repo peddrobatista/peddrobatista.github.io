@@ -7,11 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<title>Piracicaba home</title>
 </head>
-<script>
-	function mudarFotos(fotos) {
-          document.getElementById('foto').src = fotos;
-	}
-</script>
 <body>
 	<div class="interface">
 		<header class="cabecalho">
@@ -47,7 +42,6 @@
 						<li><label for="foto1"><ion-icon name="chevron-forward-outline"></ion-icon></label></li>
 					</ul>
 				</div>
-				
 				<h1>Notícias</h1>
 				<p>Fique atualizado sobre as últimas notícias que acontecem na localidade...</p>
 				<h1>Projetos</h1>
@@ -58,6 +52,11 @@
 		<p>Copyright &copy; 2019 by Pedro Batista</p>
 		<p><a href="#">Facebook</a> | <a href="#">Instagram</a> </p>
 	</footer>
+	<script>
+		function mudarFotos(fotos) {
+			  document.getElementById('foto').src = fotos;
+		}
+	</script>
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script></script> 
 	<script nomodule src="https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

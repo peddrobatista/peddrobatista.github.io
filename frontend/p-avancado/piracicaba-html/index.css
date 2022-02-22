@@ -164,7 +164,7 @@ img:hover {
 	background: rgba(255, 255, 255, 0.568);
 	box-shadow: 0 0 3px rgba(73, 73, 73, 0.836);
 	border-radius: 5px;
-	padding: 8px 16px;
+	padding: 8px;
 	margin: 1px;
 	font-size: 15px;
 }
