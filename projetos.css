@@ -111,10 +111,14 @@ section p {
     margin: 10px;
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 1px 1px 3px rgb(58, 58, 58);
+    box-shadow: 1px 1px 3px rgba(58, 58, 58, 0.514);
 }
 .container .projeto .contentBx {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     margin: 10px;
     text-align: center;
 }
