@@ -78,7 +78,7 @@ html {
 	left: 0;
 	flex-direction: row;
 	width: 100%;
-	height: 13%;
+	height: 10%;
 	padding: 0;
 	margin: auto;
 	overflow: hidden;
@@ -93,7 +93,6 @@ html {
 	justify-content: center;
 	font-weight: bolder;
 	font-size: 22pt;
-	padding-top: 10px;
 }
 #menu label ion-icon {
 	display: none;
@@ -115,9 +114,8 @@ html {
 	/*-----*/
 	#menu ul {
 		flex-direction: column;
-		height: 13%;
+		height: 10%;
 		transition: all 0.2s;
-		/*height: 45%;*/
 	}
 	#menu ul li {
 		display: none;
@@ -133,7 +131,7 @@ html {
 		border: none;
 		background: transparent;
 		margin: 0;
-		top: 10px;
+		top: 6px;
 		left: 86%;
 		padding: 0;
 		cursor: pointer;
@@ -149,10 +147,11 @@ html {
 		display: none;
 	}
 	#menu #btnClick1:checked ~ ul {
-		height: 58%;
+		height: 55%;
 	}
 	#menu #btnClick1:checked ~ ul > li {
 		display: block;
+		padding-top: 10px;
 	}
 	#menu #btnClick1:checked ~ label > ion-icon#ion1 {
 		display: none;
