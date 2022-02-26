@@ -218,3 +218,6 @@ html {
 	font-size: 15px;
 	box-shadow: inset 0 0 0.2em rgb(85, 226, 245);
 }
+#form1 input[type=radio] {
+	box-shadow: none;
+}
