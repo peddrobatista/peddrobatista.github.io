@@ -107,11 +107,11 @@ section p {
     width: 100%;
 }
 .container .projeto {
-    width: 320px;
+    width: 300px;
     margin: 10px;
-    padding: 30px 20px;
+    /*padding: 30px 20px;*/
     border-radius: 15px;
-    box-shadow: 1px 1px 3px rgba(58, 58, 58, 0.514);
+    box-shadow: 1px 0px 3px rgba(24, 24, 24, 0.568);
 }
 .container .projeto .contentBx {
     position: relative;
@@ -122,23 +122,57 @@ section p {
     margin: 10px;
     text-align: center;
 }
+.container .projeto .contentBx .imagens-demo {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 54px;
+}
+.container .projeto .contentBx .imagens-demo img {
+    position: absolute;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+.container .projeto .contentBx .imagens-demo .img1 {
+    margin-top: -35px;
+    border: 2px solid #fff;
+    box-shadow: 1px 0px 3px rgb(24, 24, 24);
+    width: 200px;
+    height: auto;
+    transition: 0.5s;
+    z-index: 1;
+    left: 10px;
+}
+.container .projeto .contentBx .imagens-demo .img1:hover {
+    transform: scale(1.2);
+    z-index: 110;
+}
+.container .projeto .contentBx .imagens-demo .img2 {
+    margin-top: -25px;
+    border: 2px solid #fff;
+    box-shadow: 1px 0px 3px rgb(24, 24, 24);
+    width: 80px;
+    height: auto;
+    transition: 0.5s;
+    z-index: 100;
+    right: -12px;
+}
+.container .projeto .contentBx .imagens-demo .img2:hover {
+    transform: scale(1.2);
+}
 .container .projeto .contentBx h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgb(24, 24, 24);
     text-transform: none;
     margin: 5px;
 }
-.container .projeto .contentBx p {
-    font-size: 0.9em;
-    color: rgb(24, 24, 24);
-}
 .container .projeto .contentBx a {
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
+    padding: 5px;
+    margin: 5px 0;
     border: 1px solid rgb(24, 24, 24);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 0.8em;
     font-weight: 700;
     color: rgb(24, 24, 24);
     text-decoration: none;
