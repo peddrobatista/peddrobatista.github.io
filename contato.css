@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Para rolar a pagina devagar */
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgb(134, 133, 133);
+}
+/* Configuraçóes do menu */
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(24, 24, 24);
+    z-index: 1000;
+}
+header .logo {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 7px;
+}
+header ul li a {
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+header ul li a:hover {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.toggle {
+    display: none;
+}
+/* Configurações da seção */
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    min-height: 100vh;
+    padding: 150px 0 50px;
+}
+section div {
+    padding: 10px 15px 10px;
+}
+section h2 {
+    font-size: 2.5em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+}
+section p {
+    color: rgb(24, 24, 24);
+    font-size: 18px;
+}
+
+/* configurações do conteiner e cards */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container .card {
+    /*width: 320px;*/
+    margin: 10px;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 .5em rgb(58, 58, 58);
+}
+.container .card .icon {
+    position: relative;
+    text-align: center;
+}
+.container .card .icon ion-icon {
+    max-width: 120px;
+    color: rgb(24, 24, 24);
+    font-size: 3.5em;
+}
+@media (max-width: 992px) {
+    /* Cofigurações da seção */
+    section h2 {
+        font-size: 2.2em;
+        text-transform: uppercase;
+    }
+    /* Configurações do menu */
+    header {
+        padding: 0 30px;
+    }
+    header ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 50%;
+        height: calc(100vh - 80px);
+        padding: 5px 10px;
+        text-align: left;
+        overflow: auto;
+        transition: 0.5s;
+        background: rgb(24, 24, 24);
+        flex-direction: column;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateX(0);
+    }
+    header ul li a {
+        margin: 5px 0;
+        width: 100%;
+        font-size: 22px;
+    }
+    /* Cofigurações do toggle */
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+    .toggle::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    header.active .toggle::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+}
