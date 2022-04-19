@@ -1,0 +1,210 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(24, 24, 24);
+    z-index: 1000;
+}
+header .logo {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 7px;
+}
+header ul li a {
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+header ul li a:hover {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.toggle {
+    display: none;
+}
+/* Configurações do dropdown*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.2s;
+}
+.conteudo-suspenso {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0 5px 5px 5px;
+    transition: 0.2s;
+}
+.conteudo-suspenso a {
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+.conteudo-suspenso a:hover {
+    background: #fff;
+}
+.dropdown:hover .conteudo-suspenso {
+    display: block;
+}
+.dropdown:hover .dropdown-btn {
+    color: #000;
+    font-weight: 700;
+    background: #fff; 
+    border-radius: 5px 5px 0 0;
+}
+/* Configurações do rodapé*/
+.rodape
+{
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 50px;
+    background-color: rgb(24, 24, 24);
+}
+.rodape div {
+    padding: 10px 15px 10px;
+}
+.rodape div p {
+    color: #f7f1e3;
+    padding: 5px 0 5px;
+    letter-spacing: 1px;
+}
+.rodape div p ion-icon {
+    margin: 2px 5px 2px;
+    font-size: 24px;
+}
+@media (max-width: 992px) {
+    /* Configurações do menu */
+    header {
+        padding: 0 30px;
+    }
+    header ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 50%;
+        height: calc(100vh - 80px);
+        padding: 5px 10px;
+        text-align: left;
+        overflow: auto;
+        transition: 0.5s;
+        background: rgb(24, 24, 24);
+        flex-direction: column;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    header.active ul {
+        opacity: 1;
+        top: 80px;
+        transform: translateX(0);
+    }
+    header ul li a {
+        margin: 5px 0;
+        width: 100%;
+        font-size: 22px;
+    }
+    /* Configurações do dropdown*/
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        transition: 0.2s;
+    }
+    .dropdown .dropdown-btn {
+        margin-bottom: 0;
+    }
+    .conteudo-suspenso {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        z-index: 1;
+        border-radius: 0 0 5px 5px;
+        transition: 0.2s;
+    }
+    .conteudo-suspenso a {
+        color: #000;
+        padding: 5px 10px;
+        text-decoration: none;
+        display: block;
+    }
+    .conteudo-suspenso a:hover {
+        background: #fff;
+    }
+    .dropdown:hover {
+        padding-bottom: 160px;
+    }
+    .dropdown:hover .conteudo-suspenso {
+        display: block;
+    }
+    .dropdown:hover .dropdown-btn {
+        color: #000;
+        font-weight: 700;
+        background: #fff; 
+        border-radius: 5px 5px 0 0;
+    }
+    /* Cofigurações do toggle */
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+    .toggle::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    header.active .toggle::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+}

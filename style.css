@@ -17,52 +17,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background: rgb(134, 133, 133);
 }
-/* Configuraçóes do menu */
-header {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(24, 24, 24);
-    z-index: 1000;
-}
-header .logo {
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 700;
-}
-header ul {
-    position: relative;
-    display: flex;
-}
-header ul li {
-    position: relative;
-    list-style: none;
-    margin: 0 7px;
-}
-header ul li a {
-    position: relative;
-    padding: 5px 10px;
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.2s;
-}
-header ul li a:hover {
-    background: #fff;
-    color: #000;
-    font-weight: 700;
-    border-radius: 5px;
-}
-.toggle {
-    display: none;
-}
 /* Configurações da seção */
 section {
     position: relative;
@@ -101,6 +55,37 @@ section a ion-icon:hover {
     background: rgb(24, 24, 24);
     color: #fff;
 }
+/* Configurações do rodapé*/
+.rodape
+{
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 50px;
+    background-color: rgb(24, 24, 24);
+}
+.rodape div {
+    padding: 10px 15px 10px;
+}
+.rodape div p {
+    color: #fff;
+    padding: 5px 0 5px;
+}
+.rodape div p ion-icon {
+    margin: 2px 5px 2px;
+    font-size: 24px;
+}
+/* Configurações da imagem do perfil*/
+.perfil img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 /* configurações do conteiner e cards */
 .container {
     position: relative;
@@ -113,9 +98,9 @@ section a ion-icon:hover {
 .container .card {
     width: 320px;
     margin: 20px;
-    padding: 30px 20px;
+    padding: 25px 15px;
     border-radius: 40px;
-    box-shadow: 1px 1px 3px rgb(58, 58, 58);
+    box-shadow: 0 0 0.3em rgb(58, 58, 58);
 }
 .container .card .icon {
     position: relative;
@@ -126,9 +111,15 @@ section a ion-icon:hover {
     color: rgb(24, 24, 24);
     font-size: 3.5em;
 }
+.container .card .icon .bi-bootstrap-fill{
+    max-width: 120px;
+    color: rgb(24, 24, 24);
+    font-size: 3.2em;
+}
 .container .card .contentBx {
     position: relative;
-    margin: 20px;
+    margin: 10px;
+    padding: 0;
     text-align: center;
 }
 .container .card .contentBx h3 {
@@ -137,9 +128,25 @@ section a ion-icon:hover {
     font-size: 1.4em;
     letter-spacing: 1px;
 }
-.container .card .contentBx p {
+.container .card .contentBx .icons {
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .contentBx .icons ion-icon{
+    font-size: 2.1em;
+    margin: 5px;
+}
+.container .card .contentBx .icons .bi-bootstrap-fill{
+    font-size: 1.8em;
+    margin: 5px;
+}
+.container .card .contentBx .icons p {
     font-size: 1em;
-    color: rgb(24, 24, 24);
+    font-weight: 500;
 }
 .container .card .contentBx a {
     display: inline-block;
@@ -163,71 +170,12 @@ section a ion-icon:hover {
         font-size: 2.2em;
         text-transform: uppercase;
     }
-    /* Configurações do menu */
-    header {
-        padding: 0 30px;
-    }
-    header ul {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 50%;
-        height: calc(100vh - 80px);
-        padding: 5px 10px;
-        text-align: left;
-        overflow: auto;
-        transition: 0.5s;
-        background: rgb(24, 24, 24);
-        flex-direction: column;
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    header.active ul {
-        opacity: 1;
-        top: 80px;
-        transform: translateX(0);
-    }
-    header ul li a {
-        margin: 5px 0;
-        width: 100%;
-        font-size: 22px;
-    }
-    /* Cofigurações do toggle */
-    .toggle {
+    /* Configurações da imagem do perfil*/
+    .perfil img {
         display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-    .toggle::before {
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        box-shadow: 0 10px 0 #fff;
-        transition: 0.5s;
-    }
-    .toggle::after {
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        transition: 0.5s;
-    }
-    header.active .toggle::before {
-        top: 14px;
-        transform: rotate(45deg);
-        box-shadow: 0 0 0 #fff;
-    }
-    header.active .toggle::after {
-        bottom: 14px;
-        transform: rotate(-45deg);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        
     }
 }
