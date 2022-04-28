@@ -34,6 +34,7 @@ section h2 {
     font-size: 2.5em;
     color: rgb(24, 24, 24);
     text-transform: uppercase;
+    margin-left: 42px;
 }
 /*Configurações do container */
 .container {
