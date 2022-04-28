@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 body::-webkit-scrollbar {
     background: transparent;
