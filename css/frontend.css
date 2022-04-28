@@ -39,7 +39,7 @@ section h2 {
 .container {
     max-width: 100%;
     background-color: #fff;
-    padding: 30px;
+    padding: 10px 10px 10px 20px;
     border-radius: 20px;
 }
 /*Configurações dos botões*/
