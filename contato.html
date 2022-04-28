@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/contato.css">
     <title>Contato</title>
 </head>
 <body>
@@ -14,7 +14,14 @@
         <ul>
             <li><a href="index.html" class="active"  onclick="toggle()">Home</a></li>
             <li><a href="#sobre" onclick="toggle()">Sobre</a></li>
-            <li><a href="projetos.html" onclick="toggle()">Projetos</a></li>
+            <li class="dropdown">
+                <a class="dropdown-btn" href="projetos.html" onclick="toggle()">Projetos</a>
+                <div class="conteudo-suspenso">
+                    <a href="frontend.html">Frontend</a>
+                    <a href="#">Backend</a>
+                    <a href="#">Ferramentas</a>
+                </div>
+            </li>
             <li><a href="#tecnologias" onclick="toggle()">Ferramentas</a></li>
             <li><a href="#contato" onclick="toggle()">Contato</a></li>
         </ul>
