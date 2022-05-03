@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Para rolar a pagina devagar */
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: rgb(134, 133, 133);
+}
+/* Configurações da seção */
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    min-height: 100vh;
+    padding: 150px 0 50px;
+}
+section div {
+    padding: 10px 15px 10px;
+}
+section h2 {
+    font-size: 2.5em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+}
+section h3 {
+    font-size: 1.6em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    margin: 20px;
+}
+section h4 {
+    font-size: 1.2em;
+    color: rgb(24, 24, 24);
+    text-transform: uppercase;
+    margin: 10px;
+}
+section p {
+    color: rgb(24, 24, 24);
+    font-size: 18px;
+}
+section a ion-icon {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 3px solid rgb(24, 24, 24);
+    border-radius: 40px;
+    font-size: 2em;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    transition: 0.2s;
+}
+section a ion-icon:hover {
+    background: rgb(24, 24, 24);
+    color: #fff;
+}
+/* configurações do conteiner e cards */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container .card {
+    width: 320px;
+    margin: 20px;
+    padding: 25px 15px;
+    border-radius: 40px;
+    box-shadow: 0 0 0.3em rgb(58, 58, 58);
+}
+.container .card .icon {
+    position: relative;
+    text-align: center;
+}
+.container .card .icon ion-icon {
+    max-width: 120px;
+    color: rgb(24, 24, 24);
+    font-size: 3.5em;
+}
+.container .card .icon .bi-bootstrap-fill{
+    max-width: 120px;
+    color: rgb(24, 24, 24);
+    font-size: 3.2em;
+}
+.container .card .contentBx {
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+.container .card .contentBx h3 {
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+.container .card .contentBx .icons {
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .contentBx .icons ion-icon{
+    font-size: 2.1em;
+    margin: 5px;
+}
+.container .card .contentBx .icons .bi-bootstrap-fill{
+    font-size: 1.8em;
+    margin: 5px;
+}
+.container .card .contentBx .icons p {
+    font-size: 1em;
+    font-weight: 500;
+}
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    transition: 0.2s;
+}
+.container .card .contentBx a:hover {
+    background: rgb(24, 24, 24);
+    color: #fff;
+}
+@media (max-width: 992px) {
+    /* Cofigurações da seção */
+    section h2 {
+        font-size: 2.2em;
+        text-transform: uppercase;
+    }
+}
