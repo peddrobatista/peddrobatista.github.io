@@ -39,7 +39,7 @@ section p {
     color: rgb(24, 24, 24);
     font-size: 18px;
 }
-section a ion-icon {
+section .links-section ion-icon {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
@@ -51,7 +51,7 @@ section a ion-icon {
     text-decoration: none;
     transition: 0.2s;
 }
-section a ion-icon:hover {
+section .links-section ion-icon:hover {
     background: rgb(24, 24, 24);
     color: #fff;
 }
@@ -148,7 +148,7 @@ section a ion-icon:hover {
     font-size: 1em;
     font-weight: 500;
 }
-.container .card .contentBx a {
+.container .card .contentBx .read-more, .see-more {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
@@ -160,9 +160,44 @@ section a ion-icon:hover {
     text-decoration: none;
     transition: 0.2s;
 }
-.container .card .contentBx a:hover {
+.container .card .contentBx .read-more:hover, .see-more:hover {
     background: rgb(24, 24, 24);
     color: #fff;
+}
+/*Configurações dos cards contatos*/
+.containers {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.containers .cards {
+    /*width: 320px;*/
+    margin: 10px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgb(24, 24, 24,.19);
+    cursor: pointer;
+}
+.containers .cards .links-contact {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.containers .cards .links-contact:hover {
+    background: #fff;
+}
+.containers .cards .icons {
+    position: relative;
+    text-align: center;
+}
+.containers .cards .icons ion-icon {
+    max-width: 120px;
+    padding: 20px;
+    color: rgb(24, 24, 24);
+    font-size: 2.5em;
 }
 @media (max-width: 992px) {
     /* Cofigurações da seção */
