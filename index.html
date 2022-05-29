@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
@@ -30,7 +33,7 @@
     </header>
     <section class="perfil" id="home">
         <div>
-            <img src="imagens/eufoto.jpg" style="width: 20%; height: auto;">
+            <img src="imagens/eufoto.jpg"">
            <h2>Pedro Batista</h2>
             <p>Olá bem vindo!!!</p> 
             <a class="links-section" href="#projetos"><ion-icon name="chevron-down-outline"></ion-icon></a>
@@ -100,20 +103,22 @@
             </div>
         </div>
     </section>
+    <div id="test-popups" class="white-popup mfp-hide">
+        <img class="img" src="imagens/contato.png" alt="imagem">
+    </div>
     <section id="contatos">
         <div>
             <h2>Contatos</h2>
             <div class="containers">
                 <div class="cards">
-                    <div class="icons">
+                    <a href="#test-popups" class="open-popup"><div class="icons">
                         <ion-icon name="logo-whatsapp"></ion-icon>
-                    </div>
+                    </div></a>
                 </div> 
                 <div class="cards">
                     <a class="links-contact" href="https://github.com/peddrobatista"><div class="icons">
                         <ion-icon name="logo-github"></ion-icon>
                     </div></a>
-                    
                 </div>
                 <div class="cards">
                     <a class="links-contact" href="https://www.instagram.com/peddrobatista/"><div class="icons">
@@ -146,6 +151,15 @@
             var header = document.getElementById("header")
             header.classList.toggle('active')
         }
+        $(document).ready(function() {
+            $('.open-popup').magnificPopup({
+                type: 'inline',
+                disableOn: 400,
+                key: 'some-key',
+                removalDelay: 300,
+                mainClass: 'mfp-fade'
+            });
+        });
     </script>
 </body>
 </html>
