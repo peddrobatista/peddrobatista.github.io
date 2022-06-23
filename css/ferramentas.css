@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    background: #f5f2f2;
     overflow-y: scroll;
 }
 body::-webkit-scrollbar {
@@ -80,8 +81,11 @@ section a ion-icon:hover {
     width: 320px;
     margin: 20px;
     padding: 25px 15px;
+    /*box-shadow: 0 0 0.3em #3a3a3a;*/
     border-radius: 40px;
-    box-shadow: 0 0 0.3em rgb(58, 58, 58);
+    background: linear-gradient(315deg, #e1e1e1, #ffffff);
+    box-shadow: -12px -12px 24px #e1e1e1,
+                12px 12px 24px #ffffff;
 }
 .container .card .icon {
     position: relative;
@@ -92,7 +96,7 @@ section a ion-icon:hover {
     color: rgb(24, 24, 24);
     font-size: 3.5em;
 }
-.container .card .icon .bi-bootstrap-fill{
+.container .card .icon .bi{
     max-width: 120px;
     color: rgb(24, 24, 24);
     font-size: 3.2em;
