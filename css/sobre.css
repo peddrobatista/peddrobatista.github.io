@@ -8,6 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    background: #f5f2f2;
     overflow-y: scroll;
 }
 body::-webkit-scrollbar {
@@ -26,7 +27,7 @@ section {
     text-align: center;
     min-height: 100vh;
     padding: 150px 0 50px;
-    background: #fff;
+    background: #f5f2f2;
 }
 section div {
     padding: 10px 15px 10px;
@@ -42,12 +43,9 @@ section h2 {
     max-width: 800px;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(#dbdae153, #a3aaba28);
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1), 
-    15px 15px 15px rgba(0,0,0,0.1),
-    20px 20px 15px rgba(0,0,0,0.1),
-    30px 30px 15px rgba(0,0,0,0.1),
-    inset 1px 1px 2px #fff;
+    background: #eeeef2;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
 }
 .container h2 {
     font-size: 2.3em;

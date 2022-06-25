@@ -83,9 +83,9 @@ section a ion-icon:hover {
     padding: 25px 15px;
     /*box-shadow: 0 0 0.3em #3a3a3a;*/
     border-radius: 40px;
-    background: linear-gradient(315deg, #e1e1e1, #ffffff);
-    box-shadow: -12px -12px 24px #e1e1e1,
-                12px 12px 24px #ffffff;
+    background: #f5f2f2;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
 }
 .container .card .icon {
     position: relative;
