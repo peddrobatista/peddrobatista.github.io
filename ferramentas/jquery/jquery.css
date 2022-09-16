@@ -9,7 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
-    background: #e8e8e8;
+    background: #f5f2f2;
     overflow-y: scroll;
 }
 body::-webkit-scrollbar {
@@ -56,11 +56,13 @@ section {
 .content_div .projeto {
     width: 300px;
     margin: 20px;
-    background: #e0e0e0;
+    /*background: linear-gradient(315deg, #cacaca, #f0f0f0);
     box-shadow: 15px 15px 30px #bebebe,
                 -15px -15px 30px #ffffff;
+                box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;*/
     padding: 30px 20px;
-    border-radius: 15px;
+    backdrop-filter: blur(5px); background-color: #f5f2f2; border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(155, 155, 155, 0.5), inset -8px -8px 16px 0px rgba(155, 155, 155, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 .content_div .projeto .contentBx {
     position: relative;
@@ -117,19 +119,22 @@ section {
     display: inline-block;
     padding: 8px 5px;
     margin: 7px 0;
-    background: #e0e0e0;
-    box-shadow: 6px 6px 12px #c5c5c5,
-                -6px -6px 12px #ffffff;
-    border-radius: 40px;
     font-size: 1em;
     font-weight: 700;
-    color: #212121;
     text-decoration: none;
     transition: 0.2s;
+    border-radius: 40px;
+    /*background: #e0e0e0;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    
+    color: #212121;
+    ;*/
+    color: #666;
+    background-color:#e7e7e7;
+    box-shadow: none;
 }
 .content_div .projeto .contentBx a:hover {
     color: #666;
-    background: linear-gradient(315deg, #cacaca, #f0f0f0);
-    box-shadow:  -2px -2px 4px #bebebe,
-             2px 2px 4px #ffffff;
+    backdrop-filter: blur(5px); background-color: #f5f2f2; border-radius: 41px; box-shadow: inset -4px -4px 16px 0px rgba(155, 155, 155, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
