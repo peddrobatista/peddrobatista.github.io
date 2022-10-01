@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5433cd07ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Jquery Accordion</title>
+</head>
+<body>
+    <div class="container">
+        <ul id="accordion">
+            <li>
+                <a href="#" class="active"><i class="fa-solid fa-gift"></i></a>
+                <div class="box active">
+                    <h1>Gift</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur voluptas placeat delectus nobis dignissimos eos aliquid et nostrum magni nisi cupiditate eligendi earum? Aspernatur optio quis magnam enim pariatur.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-martini-glass-empty"></i></a>
+                <div class="box">
+                    <h1>Glass</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur voluptas placeat delectus nobis dignissimos eos aliquid et nostrum magni nisi cupiditate eligendi earum? Aspernatur optio quis magnam enim pariatur.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                <div class="box">
+                    <h1>Globe</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur voluptas placeat delectus nobis dignissimos eos aliquid et nostrum magni nisi cupiditate eligendi earum? Aspernatur optio quis magnam enim pariatur.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                <div class="box">
+                    <h1>Graduate</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur voluptas placeat delectus nobis dignissimos eos aliquid et nostrum magni nisi cupiditate eligendi earum? Aspernatur optio quis magnam enim pariatur.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-users"></i></a>
+                <div class="box">
+                    <h1>Groups</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, pariatur voluptas placeat delectus nobis dignissimos eos aliquid et nostrum magni nisi cupiditate eligendi earum? Aspernatur optio quis magnam enim pariatur.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).on('click','#accordion>li>a', function() {
+            $(this).siblings('.box').addClass('active');
+            $(this).closest('li').siblings('li').find('.box').removeClass('active'); 
+        })
+        $('#accordion').on('click', 'li>a', function(){
+            $('#accordion li a.active').removeClass('active');
+            $(this).addClass('active');
+        })
+    </script>
+</body>
+</html>
