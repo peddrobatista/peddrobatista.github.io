@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagens/logo.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/global/header.css">
+    <link rel="stylesheet" href="../css/global/menu.css">
+    <link rel="stylesheet" href="../css/global/section.css">
+    <link rel="stylesheet" href="../css/global/rodape.css">
+    <link rel="stylesheet" href="../css/ferramentas.css">
+    <title>Ferramentas</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="toggle_content">
+            <div class="toggle">
+                <span><i class='bx bx-menu menu'></i></span>
+                <span><i class='bx bx-x fechar'></i></span>
+            </div>
+        </div>
+        
+        <a href="#" class="logo_content">
+            <span class="logo_title">Pedro Batista</span>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html" class="active"  onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-home'></i></span>
+                    <span class="title">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-info-circle' ></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="projetos.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-category'></i></span>
+                    <span class="title">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="ferramentas.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-grid-alt'></i></span>
+                    <span class="title">Ferramentas</span>
+                </a>
+            </li>
+            <li>
+                <a href="contato.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-message-rounded-dots'></i></span>
+                    <span class="title">Contato</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../imagens/profile.jpg" alt="perfil">
+                    <div class="name_job">
+                        <div class="name">Pedro Batista</div>
+                        <div class="job">Desenvolvedor de Software</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div>
+            <div class="header">
+                <h2>Ferramentas</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container_f">
+                        <div class="card_f">
+                            <div class="icon_f">
+                                <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Bootstrap</h3>
+                                <a href="/ferramentas/bootstrap.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_f">
+                            <div class="icon_f">
+                                <i class="devicon-jquery-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>jQuery</h3>
+                                <a href="/ferramentas/jquery.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_f">
+                            <div class="icon_f">
+                                <i class="devicon-react-original colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>React.js</h3>
+                                <a href="/ferramentas/react.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_f">
+                            <div class="icon_f">
+                                <i class="devicon-vuejs-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Vue.js</h3>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_f">
+                            <div class="icon_f">
+                                <i class="devicon-angularjs-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Angular</h3>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="rodape">
+                <div>
+                    <p>&copy; Copyright 2023-by Pedro Batista</p>
+                </div>
+            </div>        
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../scripts/toggle.js"></script>
+</body>
+</html>

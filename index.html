@@ -4,171 +4,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagens/logo.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global/header.css">
+    <link rel="stylesheet" href="css/global/menu.css">
+    <link rel="stylesheet" href="css/global/section.css">
+    <link rel="stylesheet" href="css/global/rodape.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portifólio</title>
+    <title>Pedro Batista</title>
 </head>
 <body>
-    <header id="header">
-        <a href="#" class="logo">Pedro Batista</a>
-        <ul>
-            <li><a href="#home" class="active"  onclick="toggle()">Home</a></li>
-            <li><a href="sobre.html" onclick="toggle()">Sobre</a></li>
-            <li class="dropdown">
-                <a class="dropdown-btn" href="projetos.html" onclick="toggle()">Projetos</a>
-                <div class="conteudo-suspenso">
-                    <a href="frontend.html">Frontend</a>
-                    <a href="#">Backend</a>
-                    <a href="ferramentas.html">Ferramentas</a>
-                </div>
-            </li>
-            <li><a href="ferramentas.html" onclick="toggle()">Ferramentas</a></li>
-            <li><a href="contato.html" onclick="toggle()">Contato</a></li>
-        </ul>
-        <div class="toggle" onclick="toggle()"></div>
+    <header class="cabecalho">
+        <div class="toggle_content">
+            <div class="toggle">
+                <span><i class='bx bx-menu menu'></i></span>
+                <span><i class='bx bx-x fechar'></i></span>
+            </div>
+        </div>
+        <a href="index.html" class="logo_content">
+            <span class="logo_title">Pedro Batista</span>
+        </a>
     </header>
-    <section class="perfil" id="home">
-        <div>
-            <img src="imagens/eufoto.jpg"">
-           <h2>Pedro Batista</h2>
-            <p>Olá bem vindo!!!</p> 
-            <a class="links-section" href="#projetos"><ion-icon name="chevron-down-outline"></ion-icon></a>
-        </div>
-    </section>
-    <section id="projetos">
-        <div>
-            <h2>Projetos</h2>
-            <div class="container">
-                <div class="card">
-                    <div class="icon">
-                        <ion-icon name="laptop-outline"></ion-icon>
-                    </div>
-                    <div class="contentBx">
-                        <h3>Frontend</h3>
-                        <div class="icons">
-                            <ion-icon name="logo-html5"></ion-icon>
-                            <ion-icon name="logo-css3"></ion-icon>
-                            <ion-icon name="logo-javascript"></ion-icon>
-                        </div>
-                        <a class="read-more" href="frontend.html">Ler Mais</a>
-                    </div>
-                </div> 
-                <div class="card">
-                    <div class="icon">
-                        <ion-icon name="terminal-outline"></ion-icon>
-                    </div>
-                    <div class="contentBx">
-                        <h3>Backend</h3>
-                        <div class="icons">
-                            <p>Java, </p>
-                            <ion-icon name="logo-python"></ion-icon>
-                        </div>
-                        <a class="read-more" href="#">Ler Mais</a>
-                    </div>
-                </div> 
-                <div class="card">
-                    <div class="icon">
-                        <ion-icon name="hammer-outline"></ion-icon>
-                    </div>
-                    <div class="contentBx">
-                        <h3>Ferramentas</h3>
-                        <div class="icons">
-                            <i class="bi bi-bootstrap-fill"></i>
-                            <ion-icon name="logo-react"></ion-icon>
-                            <ion-icon name="logo-vue"></ion-icon>
-                        </div>
-                        <a class="read-more" href="ferramentas.html">Ler Mais</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-    <section id="ferramentas">
-        <div>
-            <h2>Ferramentas</h2>
-            <div class="container">
-                <div class="card">
-                    <div class="icon">
-                        <i class="bi bi-bootstrap-fill"></i>
-                    </div>
-                    <div class="contentBx">
-                        <h3>Bootstrap</h3>
-                        <a class="see-more" href="ferramentas/bootstrap/bootstrap.html">Ver Mais</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="bi bi-file-earmark-code-fill"></i>
-                    </div>
-                    <div class="contentBx">
-                        <h3>jQuery</h3>
-                        <a class="see-more" href="ferramentas/jquery/jquery.html">Ver Mais</a>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="index.html" class="active"  onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-home'></i></span>
+                    <span class="title">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="pages/sobre.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-info-circle' ></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="pages/projetos.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-category'></i></span>
+                    <span class="title">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="pages/ferramentas.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-grid-alt'></i></span>
+                    <span class="title">Ferramentas</span>
+                </a>
+            </li>
+            <li>
+                <a href="pages/contato.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-message-rounded-dots'></i></span>
+                    <span class="title">Contato</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="imagens/profile.jpg" alt="perfil">
+                    <div class="name_job">
+                        <div class="name">Pedro Batista</div>
+                        <div class="job">Desenvolvedor de Software</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
     <div id="test-popups" class="white-popup mfp-hide">
         <img class="img" src="imagens/contato.png" alt="imagem">
     </div>
-    <section id="contatos">
+    <section class="section">
         <div>
-            <h2>Contatos</h2>
-            <div class="containers">
-                <div class="cards">
-                    <a href="#test-popups" class="open-popup"><div class="icons">
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </div></a>
-                </div> 
-                <div class="cards">
-                    <a class="links-contact" href="https://github.com/peddrobatista"><div class="icons">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </div></a>
+            <div class="header">
+                <h2>Pedro Batista</h2> 
+                <div class="section_content">
+                    <p>Olá bem vindo a minha página 😀</p> 
                 </div>
-                <div class="cards">
-                    <a class="links-contact" href="https://www.instagram.com/peddrobatista/"><div class="icons">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </div></a>
-                </div> 
-                <div class="cards">
-                    <a class="links-contact" href="mailto:peddrobatista2022@gmail.com"><div class="icons">
-                        <ion-icon name="mail-unread-outline"></ion-icon>
-                    </div></a>
-                </div> 
-                <div class="cards">
-                    <a class="links-contact" href="https://www.linkedin.com/in/pedro-batista-a1a409173"><div class="icons">
-                        <ion-icon name="logo-linkedin">a</ion-icon>
-                    </div></a>
-                </div> 
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                       <h2>Sobre</h2>
+                    </div>
+                    <div class="sobre_container_s">
+                        <div class="left_side_s">
+                            <div class="profileText_s">
+                                <div class="imgBx_s">
+                                    <img src="imagens/profile.jpg" alt="Perfil">
+                                </div>
+                                <h2>Pedro Batista<br><span>Software Developer</span></h2>
+                            </div>
+                        </div>
+                        <div class="right_side_s">
+                            <div class="about_s">
+                                <h2 class="titles-1">Analista de Sistemas</h2>
+                                <h2 class="titles-2">Fortaleza - CE</h2>
+                                <p class="texto1">22 anos</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                       <h2>Projetos</h2>
+                    </div>
+                    <div class="cards_p">
+                        <div class="card_p">
+                            <span><i class='bx bxs-window-alt'></i></span>
+                            <h3>Frontend</h3>
+                            <a href="https://github.com/peddrobatista/Projetos_Frontend" ><span class="btnOverView_p">Ver mais</span></a>
+                        </div>
+                        <div class="card_p">
+                            <span><i class='bx bx-code-block' ></i></span>
+                            <h3>Backend</h3>
+                            <a href="https://github.com/peddrobatista?tab=stars" ><span class="btnOverView_p">Ver mais</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                       <h2>Ferramentas</h2>
+                    </div>
+                    <div class="container_sf">
+                        <div class="card_sf">
+                            <div class="icon_sf">
+                                <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Bootstrap</h3>
+                                <a href="ferramentas/bootstrap.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_sf">
+                            <div class="icon_sf">
+                                <i class="devicon-jquery-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>jQuery</h3>
+                                <a href="ferramentas/jquery.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_sf">
+                            <div class="icon_sf">
+                                <i class="devicon-react-original colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>React.js</h3>
+                                <a href="ferramentas/react.html">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_sf">
+                            <div class="icon_sf">
+                                <i class="devicon-vuejs-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Vue.js</h3>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </div> 
+                        <div class="card_sf">
+                            <div class="icon_sf">
+                                <i class="devicon-angularjs-plain colored"></i>
+                            </div>
+                            <div class="contentBx">
+                                <h3>Angular</h3>
+                                <a href="#">Ver Mais</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div>
+                       <h2>Contatos</h2>
+                    </div>
+                    <div class="ctcContent">
+                        <a href="#test-popups" class="c-icon whatsapp open-popup">
+                            <span>
+                                <i class='bx bxl-whatsapp'></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/peddrobatista" class="c-icon github">
+                            <span>
+                                <i class='bx bxl-github' ></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/peddrobatista" class="c-icon instagram">
+                            <span>
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </span>
+                        </a>
+                        <a href="mailto:peddrobatista2022@gmail.com" class="c-icon gmail">
+                            <span>
+                                <i class='bx bxl-gmail' ></i>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/peddrobatista" class="c-icon linkedin">
+                            <span>
+                                <i class='bx bxl-linkedin-square' ></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape">
+                <div>
+                    <p>&copy; Copyright 2023-by Pedro Batista</p>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="rodape">
-        <div>
-            <p>&copy; Copyright 2022-by Pedro Batista</p>    
-            <p><ion-icon name="logo-facebook"></ion-icon><ion-icon name="logo-instagram"></ion-icon></p>
-        </div>
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript">
-        function toggle() {
-            var header = document.getElementById("header")
-            header.classList.toggle('active')
-        }
-        $(document).ready(function() {
-            $('.open-popup').magnificPopup({
-                type: 'inline',
-                disableOn: 400,
-                key: 'some-key',
-                removalDelay: 300,
-                mainClass: 'mfp-fade'
-            });
-        });
-    </script>
+    <script src="scripts/toggle.js"></script>
 </body>
 </html>

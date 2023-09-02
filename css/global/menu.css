@@ -1,0 +1,165 @@
+/* Configurações do container de navegação */
+.navigation {
+    position: fixed;
+    background: transparent;
+    top: 79px;
+    left: 0;
+    height: 89%;
+    border-radius: 10px;
+    width: 70px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.navigation.active {
+    width: 250px;
+}
+/* Configurações do itens da lista */
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    padding: 5px 0px;
+    margin: 10px 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* Configurações gerais dos ícones e textos */
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    border-radius: 30px;
+    margin: 4px 8px 4px 10px;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    inset: 0px;
+    color: #2d3436;
+    transition: 0.5s;
+    background: #fff;
+}
+.navigation.active ul li a {
+    border-radius: 10px;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 68px;
+    inset: 2px 12px;
+    font-size: 1.70rem;
+}
+.navigation ul li a .title {
+    position: relative;
+    inset: 2px -6px;
+    display: block;
+    font-size: 1.20rem;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+/* Configurações do perfil */
+.profile_content {
+    position: absolute;
+    color: #2d3436;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+}
+.profile_content .profile {
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: none;
+    transition: all 0.5s ease;
+}
+.profile_content .profile .profile_details {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.profile .profile_details img {
+    height: 45px;
+    width: 45px;
+    margin-left: 7px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.profile .profile_details .name_job {
+    margin-left: 14px;
+}
+.profile .profile_details .name {
+    font-size: 15px;
+    font-weight: 800;
+}
+.profile .profile_details .job {
+    font-size: 12px;
+    font-weight: 600;
+}
+@media (max-width: 992px) {
+    /* Configurações do menu */
+    .navigation {
+        position: fixed;
+        top: 90%;
+        background: rgba(236, 240, 241, 0.352);
+        backdrop-filter: blur(7px);
+        height: 95px;
+        border-radius: 10px;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    /* Configurações do itens da lista */
+    .navigation ul li {
+        position: relative;
+        list-style: none;
+        width: 100%;
+        margin: 2px 0px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    /* Configurações gerais dos ícones e textos */
+
+    .navigation ul li a {
+        position: relative;
+        display: block;
+        border-radius: 30px;
+        margin: 0px auto;
+        height: 60px;
+        width: 60px;
+        text-decoration: none;
+        color: #2d3436;
+        transition: 0.5s;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(145deg, #ffffff, #e6e6e6);
+        box-shadow:  6px 6px 12px #d4d4d4,
+             -6px -6px 12px #ffffff;
+    }
+    .navigation ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 28px;
+        inset: 2px 0px;
+        font-size: 1.70rem;
+    }
+    .navigation ul li a .title {
+        display: none;
+    }
+    /* Configurações do perfil */
+    .navigation .profile_content {
+        display: none;
+    }
+}

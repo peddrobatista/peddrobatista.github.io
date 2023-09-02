@@ -1,72 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-/* Configurações gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; /* Para rolar a pagina devagar */
-    font-family: 'Poppins', sans-serif;
-}
-body {
-    background: #f5f2f2;
-    overflow-y: scroll;
-}
-body::-webkit-scrollbar {
-    background: transparent;
-}
-body::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: rgb(134, 133, 133);
-}
-/* Configurações da seção */
-section {
-    position: relative;
+/* Configurações de Contatos */
+.container_c {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center;
-    min-height: 100vh;
-    padding: 150px 0 50px;
-}
-section div {
-    padding: 10px 15px 10px;
-}
-section h2 {
-    font-size: 2.5em;
-    color: rgb(24, 24, 24);
-    text-transform: uppercase;
-}
-section p {
-    color: rgb(24, 24, 24);
-    font-size: 18px;
-}
-
-/* configurações do conteiner e cards */
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
 }
-.container .card {
-    /*width: 320px;*/
-    margin: 10px;
-    padding: 0;
-    border-radius: 50%;
-    border: 1px solid rgb(24, 24, 24,.19);
-    cursor: pointer;
-}
-.container .card .icon {
+.container_c .c-icon {
     position: relative;
-    text-align: center;
+    margin: 15px 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
-.container .card .icon ion-icon {
-    max-width: 120px;
-    padding: 20px;
-    color: rgb(24, 24, 24);
-    font-size: 2em;
+.container_c .c-icon span {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.container_c .c-icon span i {
+    font-size: 3.5rem;
+    line-height: 100px;
+}
+.container_c .c-icon:hover span i{
+    color: #fff;
+}
+.container_c .whatsapp_c:hover span {
+    background: #26de81;
+}
+.container_c .github_c:hover span {
+    background: #2f3640;
+}
+.container_c .instagram_c:hover span {
+    background: linear-gradient(209deg, rgba(215,8,241,1) 0%, rgba(0,142,255,1) 100%);
+}
+.container_c .gmail_c:hover span {
+    background: #ee5253;
+}
+.container_c .linkedin_c:hover span {
+    background: #2e86de;
 }
 /*Configurações do popup*/
 .white-popup {
@@ -120,10 +96,15 @@ section p {
   .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
     opacity: 0;
   }
-@media (max-width: 992px) {
-    /* Cofigurações da seção */
-    section h2 {
-        font-size: 2.2em;
-        text-transform: uppercase;
-    }
+
+/* Configurações da responsividade da section */ 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid transparent;
 }

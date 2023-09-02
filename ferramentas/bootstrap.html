@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagens/logo.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/global/header.css">
+    <link rel="stylesheet" href="../css/global/menu.css">
+    <link rel="stylesheet" href="../css/global/section.css">
+    <link rel="stylesheet" href="../css/global/rodape.css">
+    <link rel="stylesheet" href="../css/ferramentas_index.css">
+    <title>Frontend</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="toggle_content">
+            <div class="toggle">
+                <span><i class='bx bx-menu menu'></i></span>
+                <span><i class='bx bx-x fechar'></i></span>
+            </div>
+        </div>
+        <a href="index.html" class="logo_content">
+            <span class="logo_title">Pedro Batista</span>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html" class="active"  onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-home'></i></span>
+                    <span class="title">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/sobre.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-info-circle' ></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/projetos.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-category'></i></span>
+                    <span class="title">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/ferramentas.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-grid-alt'></i></span>
+                    <span class="title">Ferramentas</span>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/contato.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-message-rounded-dots'></i></span>
+                    <span class="title">Contato</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../imagens/profile.jpg" alt="perfil">
+                    <div class="name_job">
+                        <div class="name">Pedro Batista</div>
+                        <div class="job">Desenvolvedor de Software</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div>
+            <div class="header">
+                <h2>Bootstrap</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="list">
+                        <div class="list-item">
+                            <span>App Landing Page Main</span>
+                            <div class="list-box">
+                                <a href="/ferramentas/bootstrap/app-landing-page-main/index.html"><i class='bx bxs-show'></i></a>
+                                <a href=""><i class='bx bx-code-block' ></i></a>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <span>Responsive Site</span>
+                            <div class="list-box">
+                                <a href="/ferramentas/bootstrap/responsive_sites/index.html"><i class='bx bxs-show'></i></a>
+                                <a href=""><i class='bx bx-code-block' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape">
+                <div>
+                    <p>&copy; Copyright 2023-by Pedro Batista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--área de scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="../scripts/toggle.js"></script>
+</body>
+</html>

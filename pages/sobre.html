@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagens/logo.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/global/header.css">
+    <link rel="stylesheet" href="../css/global/menu.css"> 
+    <link rel="stylesheet" href="../css/global/section.css">
+    <link rel="stylesheet" href="../css/global/rodape.css">
+    <link rel="stylesheet" href="../css/sobre.css">
+    <title>Sobre</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="toggle_content">
+            <div class="toggle">
+                <span><i class='bx bx-menu menu'></i></span>
+                <span><i class='bx bx-x fechar'></i></span>
+            </div>
+        </div>
+        
+        <a href="../index.html " class="logo_content">
+            <span class="logo_title">Pedro Batista</span>
+        </a>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="../index.html" class="active"  onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-home'></i></span>
+                    <span class="title">Início</span>
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-info-circle' ></i></span>
+                    <span class="title">Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="projetos.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-category'></i></span>
+                    <span class="title">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="ferramentas.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-grid-alt'></i></span>
+                    <span class="title">Ferramentas</span>
+                </a>
+            </li>
+            <li>
+                <a href="contato.html" onclick="toggle()">
+                    <span class="icon"><i class='bx bxs-message-rounded-dots'></i></span>
+                    <span class="title">Contato</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../imagens/profile.jpg" alt="perfil">
+                    <div class="name_job">
+                        <div class="name">Pedro Batista</div>
+                        <div class="job">Desenvolvedor de Software</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section">
+        <div>
+            <div class="header">
+                <h2>Sobre</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="sobre_container">
+                        <div class="left_side">
+                            <div class="profileText">
+                                <div class="imgBx">
+                                    <img src="../imagens/profile.jpg" alt="Perfil">
+                                </div>
+                                <h2>Pedro Batista<br><span>Software Developer</span></h2>
+                            </div>
+                            <div class="contactInfo">
+                                <h3 class="s_title">Contatos</h3>
+                                <ul>
+                                    <li>
+                                        <span class="s_icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                        <span class="s_text">+55 85 99285 7193</span>
+                                    </li>
+                                    <li>
+                                        <span class="s_icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                        <span class="s_text">peddrobatista2022@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contactInfo education">
+                                <h3 class="s_title">Educação</h3>
+                                <ul>
+                                    <li>
+                                        <h5>2020 - 2022</h5>
+                                        <h4>Análise e Desenvolvimento de Sistemas</h4>
+                                        <h4>Centro Universitário Ateneu</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contactInfo language">
+                                <h3 class="s_title">Idiomas</h3>
+                                <ul>
+                                    <li>
+                                        <span class="s_text">Inglês</span>
+                                        <span class="percent">
+                                            <div style="width: 50%;"></div>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="s_text">Espanhol</span>
+                                        <span class="percent">
+                                            <div style="width: 20%;"></div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="right_side">
+                            <div class="about">
+                                <h2 class="title2">Perfil</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic vero inventore at voluptatem numquam voluptatibus illum similique recusandae officia. Vero harum laborum rem quibusdam quo beatae quae totam! Quasi.
+                                    <br><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti vitae delectus eligendi nisi similique deserunt itaque sapiente quos, veniam et, quia velit magni nemo id ipsam a? Neque, dolorum porro?</p>
+                            </div>
+                            <div class="about">
+                                <h2 class="title2">Experiências</h2>
+                                <div class="box">
+                                    <div class="year_company">
+                                        <h5>2023 - Atual</h5>
+                                        <h5>Vonixx Indústria</h5>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Analista de Sistemas</h4>
+                                        <p>Desenvolve Software, a partir do escopo e das especificações dos requisitos necessários à aplicação, da criação de códigos, da elaboração de tabelas locais e de consultas para avaliar a qualidade do código desenvolvido. </p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="year_company">
+                                        <h5>2021 - 2022</h5>
+                                        <h5>Wipro Tecnology</h5>
+                                    </div>
+                                    <div class="text">
+                                        <h4>Estagiário de TI</h4>
+                                        <p>Realizou desenvolvimento de softwares em tecnologias como JAVA, C# .NET, Android e Javascript para clientes dos mais diversos setores, realizou envolvimento nas mais diversas áreas da engenharia de software, explorando os ciclos de análise de requisitos, testes e outras disciplinas, participou de equipes ágeis e/ou gerenciadas com padrão de mercado (PMBoK, SCRUM e ITIL), participou nos primeiros meses de atuação de ciclos completos de treinamento e formação nas tecnologias mapeadas. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about skills">
+                                <h2 class="title2">Ferramentas</h2>
+                                <div class="box">
+                                    <h4>HTML</h4>
+                                    <div class="percent">
+                                        <div style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <h4>CSS</h4>
+                                    <div class="percent">
+                                        <div style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <h4>Javascript</h4>
+                                    <div class="percent">
+                                        <div style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about interest">
+                                <h2 class="title2">Interesses</h2>
+                                <ul>
+                                    <li><i class="fa fa-gamepad" aria-hidden="true"></i> Jogos</li>
+                                    <li><i class="fa fa-microphone" aria-hidden="true"></i> Cantoria</li>
+                                    <li><i class="fa fa-book" aria-hidden="true"></i> Leitura</li>
+                                    <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cozinhar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape">
+                <div>
+                    <p>&copy; Copyright 2023-by Pedro Batista</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../scripts/toggle.js"></script>
+</body>
+</html>

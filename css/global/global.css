@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+}
+body {
+    background: #f5f2f2;
+}
+body::-webkit-scrollbar {
+    background: none;
+    width: 3px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #2d3436;
+}
